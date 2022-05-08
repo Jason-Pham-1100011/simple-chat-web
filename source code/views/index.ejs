@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách người dùng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css    ">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js" integrity="sha512-nYuHvSAhY5lFZ4ixSViOwsEKFvlxHMU2NHts1ILuJgOS6ptUmAGt/0i5czIgMOahKZ6JN84YFDA+mCdky7dD8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="rounded border mt-5 mb-3">
+          <h4 class="text-primary text-center my-5">Danh sách người dùng trực tuyến</h4>
+          <p style="padding: 0 24px">Số người khác đang online: <strong id='online-count' class="badge badge-danger badge-pill">0</strong></p>
+          <div id="user-list" class="people">
+            
+          </div>
+        </div>
+        <p class="small">Danh sách này cần được cập nhật tự động mỗi khi có người dùng đăng nhập hoặc đăng xuất/thoát.
+          </p>
+      </div>
+      <div class="col-md-8">
+        <div class="rounded border mt-3 mb-3">
+          <div class="conversation">
+              <!-- <div class="img-message my-message">
+                <img src="https://tdtu.edu.vn/sites/www/files/articles/2021/Jan/Xuan-tinh-nguyen/xuan_tinh_nguyen_2.jpg">
+              </div> -->
+          </div>
+        
+          <form action="">
+            <div class="message-input">
+              <input type="text" id="et-message" placeholder="Nhập tin nhắn">
+              <button class="btn btn-primary" id="btn-send-message">Gửi</button>
+            </div>
+          </form>
+        </div>
+     
+      </div>
+    </div>
+
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
